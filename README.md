@@ -1,3 +1,7 @@
+# Goal
+
+Testing how easy different backend frameworks are to fit with react. This project tests django.
+
 ## Getting This to Run
 
 ### Install Dependencies
