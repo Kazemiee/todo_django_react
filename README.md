@@ -11,8 +11,8 @@ cd backend
 python manage.py migrate
 python manage.py runserver
 
-### Vite Setup
+### Vite Setup (in a separate terminal)
 
 cd frontend
 npm install
-npm vite
+npx vite

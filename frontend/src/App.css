@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container {
   text-align: center;
+  padding: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.next-task {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px auto;
+  width: 50%;
+  border: 2px solid black;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-info {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.task-text {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.card {
-  padding: 2em;
+.complete-btn,
+.prereq-btn,
+.create-btn {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
-.read-the-docs {
-  color: #888;
+.complete-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.prereq-btn {
+  background-color: #008cba;
+  color: white;
+}
+
+.create-btn {
+  background-color: #ff9800;
+  color: white;
+  font-size: 14px;
+}
+
+.tasks-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
 }

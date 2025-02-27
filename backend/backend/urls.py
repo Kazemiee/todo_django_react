@@ -20,9 +20,13 @@ from rest_framework import routers
 from todo import views
 
 router = routers.DefaultRouter()
-router.register('todos', views.TaskView, 'todo')
+router.register(r'tasks', views.TaskView, 'task')
+router.register(r'task-orderings', views.OrderingView, 'orderings')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('api/next-task/', views.next_task, name='next-task'),
+    path('api/potential-prerequisites/<int:task_id>',
+         views.potential_prerequisites, name='potential-prerequisites'),
 ]
