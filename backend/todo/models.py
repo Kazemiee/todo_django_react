@@ -4,9 +4,9 @@ from django.db import models
 
 
 class Task(models.Model):
-    task_id = models.IntegerField()
     text = models.CharField(max_length=200)
     difficulty = models.IntegerField()
+    completed = models.BooleanField()
 
     def __str__(self):
         return self.text
